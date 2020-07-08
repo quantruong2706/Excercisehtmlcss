@@ -17,105 +17,135 @@ p {
 }
 /* header search */
 .header_search {
-  height: 80px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+
+  height: 80px;
+
   background-color: #e5e6e6;
 }
 
 .header_search-options ul {
   display: flex;
-  list-style: none;
-  opacity: 0.7;
+
   padding-right: 10rem;
+
+  list-style: none;
+
+  opacity: 0.7;
 }
 
 .header_search-options ul li {
   padding-right: 10px;
   padding-left: 10px;
+
   color: gray;
 }
 
 .header_search-input {
   position: relative;
+
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  background: #c8c8c8;
+
+  float: right;
+
   height: 30px;
   width: 300px;
   border-radius: 40px;
+
+  background: #c8c8c8;
+
   transform: translate(-10%);
-  float: right;
 }
 .header_search-inputText {
-  font-size: 16px;
-  color: white;
-  border: none;
-  background: none;
-  outline: none;
-  font-size: 16px;
   flex-basis: 270px;
+
   border-radius: 40px;
+  border: none;
+  outline: none;
+
+  font-size: 16px;
+
+  color: white;
+  background: none;
 }
 .header_search-inputIcon {
-  color: #c8c8c8;
-  width: 25px;
-  height: 25px;
-  background: white;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
   position: absolute;
   top: 2px;
   right: 5px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+
+  color: #c8c8c8;
+  background: white;
+
+  cursor: pointer;
 }
 /* end header search */
 /* start header nav */
 .nav {
   display: flex;
-  height: 7em;
   align-items: center;
+
+  height: 7em;
 }
 .logo {
-  font-size: 3rem;
-  color: black;
-  padding-left: 1em;
-  flex-basis: 300px;
   position: relative;
+
+  flex-basis: 300px;
+
+  font-size: 3rem;
+  padding-left: 1em;
+
+  color: black;
 }
 .logo::before {
   content: "free PSD Wedsite Template";
-  top: 3em;
-  font-size: 0.4em;
-  opacity: 0.7;
+
   position: absolute;
+  top: 3em;
+
+  font-size: 0.4em;
+
+  opacity: 0.7;
 }
 .nav-list {
   display: flex;
   flex-grow: 1;
   justify-content: flex-end;
-  text-transform: uppercase;
+
   padding-right: 2rem;
+
+  text-transform: uppercase;
 }
 .nav-item {
-  list-style: none;
-  padding-right: 3rem;
-  font-size: 1.3rem;
   position: relative;
+
+  padding-right: 3rem;
+
+  list-style: none;
+  font-size: 1.3rem;
 }
 .nav-link {
   color: #000;
 }
 .nav-item::before {
-  position: absolute;
   content: "test text here";
+
+  position: absolute;
+  top: 2rem;
+
   font-size: 0.5em;
   opacity: 0.3;
-  top: 2rem;
 }
 .nav-link:hover {
   color: #ff5c33;
@@ -123,91 +153,109 @@ p {
 /* end header nav */
 /* start main section story */
 .main-section_story {
-  height: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  height: 120px;
   /* position: relative; */
 }
 .story-text {
+  position: relative;
+
   text-align: center;
   font-style: italic;
-  position: relative;
 }
 .border-text {
+  position: relative;
+
   height: 2px;
   width: 20px;
-  /* background-color: blue; */
-  position: relative;
 }
 .border-text::before {
-  position: absolute;
   content: "";
-  height: 1222px;
-  width: 2px;
-  background: linear-gradient(0deg, rgba(249, 249, 249, 1) 0%, rgba(173, 173, 173, 1) 50%, rgba(255, 255, 255, 1) 100%);
-  transform: rotate(90deg);
+
+  position: absolute;
   top: -42rem;
   left: 30rem;
-}
-.border-text::after {
-  position: absolute;
-  content: "";
+
   height: 1222px;
   width: 2px;
+
   background: linear-gradient(0deg, rgba(249, 249, 249, 1) 0%, rgba(173, 173, 173, 1) 50%, rgba(255, 255, 255, 1) 100%);
+
   transform: rotate(90deg);
+}
+.border-text::after {
+  content: "";
+
+  position: absolute;
   top: -34rem;
   left: 30rem;
+
+  height: 1222px;
+  width: 2px;
+
+  background: linear-gradient(0deg, rgba(249, 249, 249, 1) 0%, rgba(173, 173, 173, 1) 50%, rgba(255, 255, 255, 1) 100%);
+
+  transform: rotate(90deg);
 }
 .story-text::before {
-  position: absolute;
   content: open-quote;
-  font-size: 2.5rem;
+
+  position: absolute;
   left: -1rem;
   top: -0.6rem;
+
+  font-size: 2.5rem;
 }
 .story-text::after {
-  position: absolute;
   content: close-quote;
-  font-size: 2.5rem;
+
+  position: absolute;
   left: 44.5rem;
   top: 2.4rem;
+
+  font-size: 2.5rem;
 }
 /* end main section story */
 /* start main section project */
 #main-section_blog {
+  display: flex;
+
   padding-top: 5rem;
   height: 800px;
-  display: flex;
 }
 #aside_blog {
   flex-grow: 0;
   flex-basis: 450px;
 }
 #aside_blog > h2 {
-  font-style: italic;
   padding-left: 3rem;
+
+  font-style: italic;
 }
 #aside_blog > p {
-  font-size: 1.3rem;
-  font-style: italic;
-  text-align: initial;
   padding-left: 3rem;
   padding-top: 2rem;
   padding-right: 3rem;
+
+  font-size: 1.3rem;
+  font-style: italic;
+  text-align: initial;
+
   opacity: 0.7;
 }
 
 .show-blogs {
-  flex-grow: 1;
   display: flex;
+  flex-grow: 1;
   flex-direction: column;
-  justify-content: space-;
 }
 .box-blog_1 {
   display: flex;
   justify-content: space-around;
+
   padding-bottom: 2rem;
 }
 .box-blog_2 {
@@ -220,10 +268,14 @@ p {
 .blog_1 > img {
   box-shadow: 1px 31px 9px -14px rgba(163, 163, 163, 1);
 }
+.blog_1 > img:hover {
+  cursor: pointer;
+}
 .blog_1 > p {
-  font-size: 1.2rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
+
+  font-size: 1.2rem;
 }
 .blog_1 > a {
   color: #ff5c33;
@@ -232,16 +284,19 @@ p {
 /* end main section project */
 /* start footer */
 footer {
-  width: 100%;
-  height: 600px;
-  background-color: #e5e6e6;
   display: flex;
   flex-direction: column;
+
+  width: 100%;
+  height: 600px;
+
+  background-color: #e5e6e6;
 }
 .footer-aboutus {
-  height: 500px;
   display: flex;
   justify-content: space-around;
+
+  height: 500px;
 }
 .footer-ending {
   height: 100px;
